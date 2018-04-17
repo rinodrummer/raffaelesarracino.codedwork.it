@@ -1,5 +1,20 @@
 /*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
 
+@-webkit-keyframes 'rotate3DAnimation' {
+	from{
+	transform:rotate3d(3, 3, 2, 5rad);
+	}
+}
+@-webkit-keyframes 'rotateXAnimation' {
+	from{
+	transform:rotateX(360deg);
+	}
+}
+@-webkit-keyframes 'rotateYAnimation' {
+	from{
+	transform:rotateY(360deg);
+	}
+}
 
 html {
     color: #222;
@@ -28,6 +43,11 @@ body:before, body::before {
     -webkit-filter: brightness(40%);
 }
 
+
+    .caption {
+        color: #ECECEC;
+    }
+}
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -102,22 +122,31 @@ a:visited{
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.centerLogo{
+.center{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.Logo{
     background-image: url('http://raffaelesarracino.codedwork.it/RSL.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 14rem;
     height: 14rem;
     margin: 3rem;
-    margin-left: auto;
-    margin-right: auto;
     filter: brightness(110%);
     -webkit-filter: brightness(110%);
-    /*background-color: #FFF;*/
-    border-radius: 2%;
+    /*background-color: #FFF;
+    border-radius: 2%;*/
+    animation-name:rotate3DAnimation;
+	animation-direction:normal;
+	animation-duration:1s;
+	animation-iteration-count:1;
+	animation-play-state:running;
 }
-
-#information{
+#nameInfo{
+    text-align: center;
+}
+.information{
     width: 80%;
     margin-top: 4rem;
     margin-left: auto;
@@ -128,7 +157,6 @@ a:visited{
     font-family: acumin-pro-condensed, sans-serif;
     font-style: italic;
     font-weight: 400;
-    text-align: center;
 }
 .contact{
     font-family: 'Ubuntu', sans-serif;
@@ -244,11 +272,15 @@ ul.inline > li{
     clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+@media (min-width: 1000px) {
+    #nameInfo h1 {
+        display: inline-block;
+    }
+
+    #nameInfo  h1.nick:before, #nameInfo  h1.nick::before {
+        content: "\00a0 - ";
+    }
+}
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
