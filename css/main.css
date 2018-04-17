@@ -9,7 +9,7 @@ html {
 
 body:before, body::before {
     content: "";
-    background: url('../images/caserta/1/reggia_1920.jpg');
+    background: url('../images/background/1.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     -webkit-background-size: cover;
@@ -98,7 +98,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .centerLogo{
-    background-image: url('http://raffaelesarracino.codedwork.it/rsSvg.svg');
+    background-image: url('http://raffaelesarracino.codedwork.it/RSL.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 14rem;
@@ -108,7 +108,7 @@ textarea {
     margin-right: auto;
     filter: brightness(110%);
     -webkit-filter: brightness(110%);
-    background-color: #FFF;
+    /*background-color: #FFF;*/
     border-radius: 2%;
 }
 
