@@ -83,6 +83,11 @@ textarea {
     resize: vertical;
 }
 
+a,
+a:visited{
+    text-decoration: none;
+}
+
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -131,10 +136,19 @@ textarea {
     font-style: normal;
     color: #FFF;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
-
-
+ul.inline > li{
+    display: inline-block;
+    margin-right:2rem;
+}
+.iconSmall{
+    width: 2rem;
+    height: 2rem;
+    float: left;
+    margin-right: 1rem;
+}
 
 
 
@@ -266,7 +280,7 @@ textarea {
 
     a,
     a:visited {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     a[href]:after {
