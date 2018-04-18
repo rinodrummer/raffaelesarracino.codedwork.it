@@ -107,6 +107,9 @@ a,
 a:visited{
     text-decoration: none;
 }
+a:hover > p{
+	color: #1B9AC4;
+}
 
 /* ==========================================================================
    Browser Upgrade Prompt
