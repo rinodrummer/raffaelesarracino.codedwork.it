@@ -147,15 +147,7 @@ a:hover > p{
 	animation-play-state:running;
 	-webkit-transition-duration: 2s;
 	-webkit-transition-timing-function: ease-in-out;
-	cursor: pointer;
 
-}
-.Logo:hover {
-	border-radius: 50%;
-	/*border: 2px solid #1B9AC4;*/
-	background-image: url('http://raffaelesarracino.codedwork.it/images/avatar.jpg');
-	-webkit-transition-timing-function: ease-in-out;
-	-webkit-transition-duration: 2s;
 }
 
 #nameInfo{
