@@ -1,16 +1,68 @@
 /*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
 
-@-webkit-keyframes 'rotate3DAnimation' {
+/* WebKit animations */
+@-webkit-keyframes rotate3DAnimation {
 	from{
 	transform:rotate3d(3, 3, 2, 5rad);
 	}
 }
-@-webkit-keyframes 'rotateXAnimation' {
+@-webkit-keyframes rotateXAnimation {
 	from{
 	transform:rotateX(360deg);
 	}
 }
-@-webkit-keyframes 'rotateYAnimation' {
+@-webkit-keyframes rotateYAnimation {
+	from{
+	transform:rotateY(360deg);
+	}
+}
+
+/* Mozilla animations: */
+@-moz-keyframes rotate3DAnimation {
+	from{
+	transform:rotate3d(3, 3, 2, 5rad);
+	}
+}
+@-moz-keyframes rotateXAnimation {
+	from{
+	transform:rotateX(360deg);
+	}
+}
+@-moz-keyframes rotateYAnimation {
+	from{
+	transform:rotateY(360deg);
+	}
+}
+
+/* Opera animations: */
+@-o-keyframes rotate3DAnimation {
+	from{
+	transform:rotate3d(3, 3, 2, 5rad);
+	}
+}
+@-o-keyframes rotateXAnimation {
+	from{
+	transform:rotateX(360deg);
+	}
+}
+@-o-keyframes rotateYAnimation {
+	from{
+	transform:rotateY(360deg);
+	}
+}
+
+/* General animations: */
+@keyframes rotate3DAnimation {
+	from{
+	transform:rotate3d(3, 3, 2, 5rad);
+	}
+}
+@keyframes rotateXAnimation {
+	from{
+	transform:rotateX(360deg);
+	}
+}
+@keyframes rotateYAnimation {
 	from{
 	transform:rotateY(360deg);
 	}
@@ -23,7 +75,7 @@ html {
 }
 
 body:before, body::before {
-    content: "";
+    content: " ";
     background: url('../images/background/1-small.svg');
     background-repeat: no-repeat;
     background-position: top center;
@@ -43,10 +95,8 @@ body:before, body::before {
     -webkit-filter: brightness(40%);*/
 }
 
-
-    .caption {
-        color: #ECECEC;
-    }
+.caption {
+    color: #ECECEC;
 }
 
 ::-moz-selection {
@@ -145,7 +195,9 @@ a:hover > p{
 	animation-duration:1s;
 	animation-iteration-count:1;
 	animation-play-state:running;
+    transition-duration: 2s;
 	-webkit-transition-duration: 2s;
+    transition-timing-function: ease-in-out;
 	-webkit-transition-timing-function: ease-in-out;
 
 }
